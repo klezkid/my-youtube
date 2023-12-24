@@ -1,0 +1,266 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Roboto, Arial, sans-serif;
+    background-color: #0f0f0f;
+    margin-left: -5px;
+    margin-top: 2px;
+}
+
+header {
+    display: flex;
+    height: 57px;
+    justify-content: space-between;
+}
+
+.header-left {
+    width: 175px;
+    display: flex;
+    margin-right: 30px;
+    margin-left: 30px;
+    align-items: center;
+    flex-shrink: 0;
+}
+
+.ham-container {
+    height: 37px;
+    width: 37px;
+    padding-left: 6px;
+    padding-top: 7px;
+    transition: background-color .17s;
+    border-radius: 30px;
+    margin-left: -4px;
+    cursor: pointer;
+}
+
+.ham-container:hover {
+    background-color: #272727;    
+}
+
+.youtube-icon-container {
+    position: relative;
+    cursor: pointer;
+    margin-left: 20px;
+}
+
+.youtube-icon {
+    width: 90px;
+    height: 20px;
+}
+
+.header-left span {
+    font-size: 10px;
+    display: inline-flex;
+    color:  #aaaaaa;
+    position: absolute;
+    right: -18px;
+    top: -8px;
+}
+
+.header-middle {
+    flex: 1;
+    margin-left: 40px;
+    padding-left: 8px;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    background-color: #0f0f0f;
+    margin-right: 30px;
+}
+
+.search-bar {
+    flex: 1;
+    width: 280px;
+    height: 40px;
+    width: 30px;
+    max-width: 600px;
+    border-radius: 20px;
+    border: 1px solid #303030;
+    background-color: #121212;
+    color: #fff;
+    padding-left: 16px;
+    font-size: 16px;
+}
+
+.search-bar::placeholder {
+    font-size: 16px;
+    padding-left: 20px;
+    color: #949494;
+}
+
+.header-middle button {
+    height: 40px;
+    background-color: #222222;
+    color: #fff;
+    cursor: pointer;
+}
+
+.search-icon {
+    margin-left: -17px;
+    padding-left: 18px;
+    padding-right: 18px;
+    border-top-right-radius: 20px;
+    border-bottom-right-radius: 20px;
+    margin-right: 20px;
+    border: 1px solid #303030;
+}
+
+.voice-search-icon {
+    padding-left: 8px;
+    padding-right: 8px;
+    padding-top: 2px;
+    border-radius: 20px;
+    border: none;
+}
+
+.voice-search-icon:hover {
+    background-color: #373737
+}
+
+.header-right {
+    display: flex;
+    align-items: center;
+    width: 165px;
+    justify-content: space-between;
+    padding-right: 25px;
+    flex-shrink: 0;
+}
+
+.create-container,
+.notification-container {
+    height: 37px;
+    width: 37px;
+    padding-left: 7px;
+    padding-top: 7px;
+    transition: background-color .17s;
+    border-radius: 30px;
+    cursor: pointer;
+}
+
+.create-container:hover,
+.notification-container:hover {
+    background-color: #272727;    
+}
+
+.user-picture {
+    border-radius: 20px;
+    height: 36px;
+    width: 36px;
+    cursor: pointer;
+}
+
+@media (max-width: 426px) {
+    header {
+        justify-content: space-evenly;
+    }
+
+    .header-left {
+        margin-right: 5px;
+        width: 130px;
+    }
+
+    .header-middle {
+        margin-left: 3px;
+        padding-left: 3px;
+    }
+
+    .search-bar {
+        display: none;
+    }
+
+    .search-icon {
+        border: none;
+        margin-left: 10px;
+        padding-right: 10px;
+        margin-right: 2px;
+        padding-left: 8px;
+        padding-right: 4px;
+        padding-top: 2px;
+    }
+
+    .header-middle button {
+        background-color: #0f0f0f;
+    }
+
+    .header-right {
+        padding-right: 5px;
+        width: 120px;
+    }
+}
+
+nav {
+    width: 226px;
+}
+
+.top-nav-container {
+    padding-bottom: 10px;
+    border-bottom: 1px solid #505050;
+    margin-left: 15px;
+    margin-right: 3px;
+    margin-top: 12px;
+}
+
+.top-nav {
+    border-radius: 12px;
+    display: flex;
+    height: 40px;
+    margin-right: 7px;
+    align-items: center;
+    padding-left: 13px;
+    font-size: 14px;
+    font-weight: 500;
+    cursor: pointer;
+    color: #fff;
+    transition: background-color .17s;
+    cursor: pointer;
+}
+
+.top-nav:hover {
+    background-color: #272727;
+}
+
+.top-nav img {
+    width: 24px;
+    margin-right: 20px;
+}
+
+@media (max-width: 1024px) {
+    nav {
+        width: 90px;
+    }
+
+    .top-nav {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+        height: 74px;
+        width: 64px;
+        justify-content: center;
+        align-items: center;
+        text-wrap: nowrap;
+        margin: 12px;
+        font-size: 10px;
+    }
+
+    .top-nav p {
+        display: block;
+        text-align: center;
+        margin-left: -14px;
+        margin-top: 5px;
+    }
+
+    .top-nav-container {
+        border: none;
+        margin: 0;
+        padding: 0;
+    }
+
+    .middle-top-nav {
+        display: none;
+    }
+
+}
